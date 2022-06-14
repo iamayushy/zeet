@@ -11,6 +11,7 @@
     "@100mslive/react-sdk": "^0.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
     "vercel": "^25.1.0"
   },
   "devDependencies": {

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import {useHMSActions} from '@100mslive/react-sdk'
+import { Card } from "./Card"
 const endpoint = "https://prod-in2.100ms.live/hmsapi/developmeet.app.100ms.live/"
 
 const Greet = () => {
@@ -31,9 +32,10 @@ const Greet = () => {
     }
     return(
         <div>
-            <form onSubmit={handleSubmit}>
-                <input required onChange={(e) => setUserName(e.target.value)} value={userName} type="text" name="user" id="user" />
-                <input type="submit" value = 'Join'  name="submit" id="join" />
+            <Card/>
+            <form className="form" onSubmit={handleSubmit}>
+                <input className="name" required onChange={(e) => setUserName(e.target.value)} value={userName} type="text" name="user" id="user" />
+                <input className="join" type="submit" value = 'Join'  name="submit" id="join" />
             </form>
         </div>
     )
